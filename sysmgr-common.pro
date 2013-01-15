@@ -121,9 +121,6 @@ linux-g++ {
     include(desktop.pri)
 } else:linux-g++-64 {
     include(desktop.pri)
-} else:linux-qemux86-g++ {
-    include(emulator.pri)
-    QMAKE_CXXFLAGS += -fno-strict-aliasing
 } else {
     ## First, check to see if this in an emulator build
     include(emulator.pri)
