@@ -70,20 +70,19 @@ contains(MACHINE_NAME, "tuna") {
     LIBS += -lqpalm
 }
 contains(MACHINE_NAME, "slate") {
-    DEFINES += MACHINE_SLATE MACHINE_X86_TABLET
-    TARGET_TYPE = TARGET_DEVICE
+    DEFINES += MACHINE_SLATE HAS_PALM_QPA
     CONFIG_BUILD += webosdevice nyx
-    LIBS += -lqpalm -lserviceinstaller
+    LIBS += -lqpalm 
 }
 contains(MACHINE_NAME, "rock") {
-    DEFINES += MACHINE_SLATE MACHINE_X86_TABLET
+    DEFINES += MACHINE_SLATE HAS_PALM_QPA
     TARGET_TYPE = TARGET_DEVICE
     CONFIG_BUILD += webosdevice nyx
     LIBS += -lqpalm -lserviceinstaller
 }
 contains(MACHINE_NAME, "cedartrail") {
-    DEFINES += MACHINE_SLATE MACHINE_X86_TABLET
+    DEFINES += MACHINE_SLATE HAS_PALM_QPA
     TARGET_TYPE = TARGET_DEVICE
     CONFIG_BUILD += webosdevice nyx opengl
-    LIBS += -lqpalm -lserviceinstaller
+    LIBS += -lqpalm 
 }
